@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Dashboard</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        background-color: #f2f2f2;
+      }
+
+      nav {
+        background-color: #2a5298;
+        color: white;
+        padding: 15px;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      .container {
+        width: 90%;
+        margin: 30px auto;
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 30px;
+        background-color: white;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #2a5298;
+        color: white;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #2a5298;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <b>Student Dashboard</b>
+      <a href="#">Home</a>
+      <a href="#">Students</a>
+      <a href="#">Reports</a>
+    </nav>
+
+    <div class="container">
+      <h1>Dashboard</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Students</h3>
+          <h2>120</h2>
+        </div>
+
+        <div class="card">
+          <h3>Courses</h3>
+          <h2>8</h2>
+        </div>
+
+        <div class="card">
+          <h3>Attendance</h3>
+          <h2>85%</h2>
+        </div>
+      </div>
+
+      <h2>Student Details</h2>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Marks</th>
+        </tr>
+
+        <tr>
+          <td>Arun</td>
+          <td>CSE</td>
+          <td>85</td>
+        </tr>
+
+        <tr>
+          <td>Priya</td>
+          <td>IT</td>
+          <td>90</td>
+        </tr>
+
+        <tr>
+          <td>Rahul</td>
+          <td>ECE</td>
+          <td>78</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <button onclick="showMessage()">Click Me</button>
+
+      <p id="message"></p>
+    </div>
+
+    <script>
+      function showMessage() {
+        document.getElementById("message").innerHTML =
+          "Welcome to Student Dashboard";
+      }
+    </script>
+  </body>
+</html>
